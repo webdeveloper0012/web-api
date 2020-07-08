@@ -1,0 +1,85 @@
+{
+	"variables": [],
+	"info": {
+		"name": "student web api",
+		"_postman_id": "9b02d886-f812-20d5-1290-a9ec073d9c70",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/auth/signup",
+			"request": {
+				"url": "localhost:8080/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"name\":\"admin admin\",\n\t\"username\":\"admin\",\n\t\"email\":\"admin@gmail.com\",\n\t\"password\":\"admin123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/auth/signup",
+			"request": {
+				"url": "localhost:8080/api/auth/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"usernameOrEmail\":\"admin\",\n\t\"password\":\"admin123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/user",
+			"request": {
+				"url": "localhost:8080/api/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNGM0ZTFjMy03YzhmLTQ2ZTctYTAyMS0yNDBlZjJlNzdhNjUiLCJpYXQiOjE1NzU1MzQ1MzEsImV4cCI6MTU3NjEzOTMzMX0.ltjOfzJedpbROESSOCTlQiiUeGH0tuyd-RKzb0nmvoa-hAY3mGq_tzWw8nHfFv4iS4zzTT7Cm1RwpsxmblI-gw",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/user/24c4e1c3-7c8f-46e7-a021-240ef2e77a65",
+			"request": {
+				"url": "localhost:8080/api/user/24c4e1c3-7c8f-46e7-a021-240ef2e77a65",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNGM0ZTFjMy03YzhmLTQ2ZTctYTAyMS0yNDBlZjJlNzdhNjUiLCJpYXQiOjE1NzU1MzQ1MzEsImV4cCI6MTU3NjEzOTMzMX0.ltjOfzJedpbROESSOCTlQiiUeGH0tuyd-RKzb0nmvoa-hAY3mGq_tzWw8nHfFv4iS4zzTT7Cm1RwpsxmblI-gw",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
